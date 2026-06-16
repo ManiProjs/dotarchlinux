@@ -1,0 +1,45 @@
+* {
+font-family: "JetBrainsMono Nerd Font";
+font-size: 12px;
+}
+
+window#waybar {
+    background-color: #0b0f14;
+    color: #e5e7eb;
+}
+
+/* workspace = PRIMARY interactive component */
+#workspaces button {
+padding: 6px 10px;
+margin: 3px;
+border-radius: 10px;
+color: #6b7280;
+background-color: transparent;
+}
+
+#workspaces button.active {
+background-color: #1e293b;
+color: #ffffff;
+border-bottom: 2px solid #3b82f6;
+}
+
+#workspaces button:hover {
+background-color: #141a22;
+color: #e5e7eb;
+}
+
+/* system modules (consistent neutral styling) */
+#cpu, #memory, #temperature,
+#network, #pulseaudio, #battery, #clock, #tray, #custom-media {
+padding: 0 10px;
+color: #cbd5e1;
+}
+
+#battery.charging {
+color: #3b82f6;
+}
+
+#network.disconnected,
+#pulseaudio.muted {
+color: #6b7280;
+}

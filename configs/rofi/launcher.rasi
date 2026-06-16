@@ -1,0 +1,55 @@
+* {
+    background-color: #1e232a;
+    text-color: #e5e7eb;
+    border-color: #3b82f6;
+}
+
+/* MAIN WINDOW */
+window {
+    border: 1px;
+    border-radius: 12px;
+    padding: 12px;
+
+    height: 500px;
+
+    background-color: #1e232a;
+}
+
+/* SEARCH BAR CONTAINER */
+inputbar {
+    border: 1px;
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #1e232a;
+}
+
+/* TEXT INPUT */
+entry {
+    background-color: transparent;
+    text-color: #e5e7eb;
+}
+
+/* LIST AREA */
+listview {
+    spacing: 6px;
+    padding: 4px;
+}
+
+/* EACH ITEM */
+element {
+    padding: 8px;
+    border-radius: 8px;
+
+    background-color: #1e232a;
+    text-color: #e5e7eb;
+}
+
+/* SELECTED ITEM */
+element selected {
+    background-color: #2b3440;
+    border: 1px;
+    border-color: #3b82f6;
+
+    text-color: #ffffff;
+}

@@ -1,0 +1,16 @@
+* {
+    background-color: #1e232a;
+    text-color: #e5e7eb;
+    border-color: #3b82f6;
+}
+
+window {
+    border: 1px;
+    border-radius: 12px;
+}
+
+element selected {
+    background-color: #2b3440;
+    border: 1px;
+    border-color: #3b82f6;
+}
