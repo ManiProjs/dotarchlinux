@@ -28,6 +28,17 @@ hl.bind(mod .. " + B", function()
 	hl.exec_cmd("firefox")
 end)
 
-hl.bind("SUPER + 1", hl.dsp.exec_cmd("hyprctl dispatch workspace 1"))
-hl.bind("SUPER + 2", hl.dsp.exec_cmd("hyprctl dispatch workspace 2"))
+hl.bind(mod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+
+hl.bind(mod .. " + left", hl.dsp.focus({ direction = "left" }))
+hl.bind(mod .. " + right", hl.dsp.focus({ direction = "right" }))
+hl.bind(mod .. " + up", hl.dsp.focus({ direction = "up" }))
+hl.bind(mod .. " + down", hl.dsp.focus({ direction = "down" }))
+
+for i = 1, 10 do
+	local key = i % 10
+	hl.bind(mod .. " + " .. key, hl.dsp.focus({workspace = i}))
+	hl.bind(mod .. " + SHIFT + " .. key, hl.dsp.window.move({workspace = i}))
+end
+
 
