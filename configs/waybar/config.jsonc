@@ -7,6 +7,14 @@
     "hyprland/workspaces"
   ],
 
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{name}",
+    "persistent-workspaces": {
+      "*": 10
+    }
+  },
+
   "modules-center": [
     "clock"
   ],
