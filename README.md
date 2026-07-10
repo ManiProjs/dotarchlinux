@@ -17,6 +17,8 @@ Currently, I only have configs for Hyprland + Rofi + Waybar
 - Hyprshutdown
 - Rofi
 - Waybar
+- Kitty
+- JetBrains Mono Nerd Font (You will see square instead of icons in Waybar)
 - Plasma Desktop Backgrounds (Optional, you can change the wallpaper in ~/.config/hypr/hyprpaper.conf)
 
 ### Installation
@@ -24,7 +26,7 @@ Currently, I only have configs for Hyprland + Rofi + Waybar
 First things first, install required packages
 
 ```shell
-sudo pacman -S hyprland hyprpaper hyprlock hyprshutdown rofi waybar plasma-workspace-wallpapers
+sudo pacman -S hyprland hyprpaper hyprlock hyprshutdown rofi waybar kitty ttf-jetbrains-mono-nerd plasma-workspace-wallpapers
 ```
 
 Then install them like this:
