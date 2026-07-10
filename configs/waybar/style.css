@@ -4,8 +4,14 @@ font-size: 12px;
 }
 
 window#waybar {
-    background-color: #0b0f14;
+    background: transparent;
     color: #e5e7eb;
+}
+
+#waybar > box {
+    background: rgba(20, 20, 25, 0.92);
+    border-radius: 16px;
+    padding: 4px 12px;
 }
 
 /* workspace = PRIMARY interactive component */
