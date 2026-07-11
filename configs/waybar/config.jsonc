@@ -19,10 +19,11 @@
   },
 
   "modules-center": [
-    "clock"
+    "hyprland/window"
   ],
 
   "modules-right": [
+    "clock",
     "cpu",
     "memory",
     "temperature",

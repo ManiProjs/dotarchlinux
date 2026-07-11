@@ -12,7 +12,7 @@ hl.bind(mod .. " + Q", function()
 	hl.dispatch(hl.dsp.window.close())
 end)
 
-hl.bind(mod .. " + R", function()
+hl.bind(mod .. " + Space", function()
 	hl.exec_cmd("~/.config/rofi/launcher.sh")
 end)
 
