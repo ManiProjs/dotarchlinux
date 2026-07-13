@@ -1,8 +1,9 @@
 import QtQuick
-import QtQuick.Layouts
 import Quickshell
+
 import "../theme"
 import "../widgets"
+import "../popups"
 
 PanelWindow {
     id: barWindow
@@ -17,6 +18,11 @@ PanelWindow {
 
     color: "transparent"
 
+    // The Control Center is a separate window, not part of the bar layout.
+    ControlCenter {
+        id: controlCenter
+    }
+
     Rectangle {
         anchors {
             fill: parent
@@ -29,24 +35,30 @@ PanelWindow {
 
         color: Qt.rgba(20 / 255, 20 / 255, 25 / 255, 0.92)
 
-        RowLayout {
+        Item {
             anchors.fill: parent
 
-            anchors.leftMargin: 12
-            anchors.rightMargin: 12
-
-            spacing: 8
-
-            LeftSection {}
-
-            Item {
-                Layout.fillWidth: true
+            LeftSection {
+                anchors {
+                    left: parent.left
+                    leftMargin: 12
+                    verticalCenter: parent.verticalCenter
+                }
             }
 
-            CenterSection {}
+            CenterSection {
+                anchors.centerIn: parent
+            }
 
             RightSection {
+                anchors {
+                    right: parent.right
+                    rightMargin: 12
+                    verticalCenter: parent.verticalCenter
+                }
+
                 barWindow: barWindow
+                controlCenter: controlCenter
             }
         }
     }

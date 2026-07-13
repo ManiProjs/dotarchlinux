@@ -3,12 +3,12 @@ import QtQuick.Layouts
 
 import "../widgets"
 import "../theme"
-import "../popups"
 
 RowLayout {
     id: root
 
     property var barWindow
+    property var controlCenter
 
     spacing: Theme.spacing
 
@@ -18,13 +18,12 @@ RowLayout {
 
     Memory {}
 
-    Temperature {}
-
     Network {}
 
     Volume {}
 
-    Battery {}
+    // Uncomment this line to show battery indicator in  the bar
+    // Battery {}
 
     Media {}
 
@@ -33,14 +32,8 @@ RowLayout {
     }
 
     ControlButton {
-        id: control
-
         onClicked: {
-            center.opened = !center.opened
+            root.controlCenter.opened = !root.controlCenter.opened
         }
-    }
-
-    ControlCenter {
-        id: center
     }
 }
