@@ -8,17 +8,15 @@ Rectangle {
 
     property string icon: ""
     property string title: ""
-    property string subtitle: ""
-    property bool active: false
 
     signal clicked()
 
     Layout.fillWidth: true
-    implicitHeight: 74
+    implicitHeight: 82
 
     radius: Theme.radius
 
-    color: active
+    color: mouse.containsMouse
     ? Theme.workspaceActive
     : Theme.workspaceHover
 
@@ -32,6 +30,8 @@ Rectangle {
     }
 
     MouseArea {
+        id: mouse
+
         anchors.fill: parent
 
         hoverEnabled: true
@@ -41,44 +41,31 @@ Rectangle {
         onClicked: root.clicked()
     }
 
-    RowLayout {
-        anchors.fill: parent
-        anchors.margins: 14
+    Column {
+        anchors.centerIn: parent
 
-        spacing: 12
+        spacing: 6
 
         Text {
+            anchors.horizontalCenter: parent.horizontalCenter
+
             text: root.icon
 
             color: Theme.foreground
 
             font.family: Theme.fontFamily
-            font.pixelSize: 20
+            font.pixelSize: 24
         }
 
-        ColumnLayout {
-            Layout.fillWidth: true
+        Text {
+            anchors.horizontalCenter: parent.horizontalCenter
 
-            spacing: 2
+            text: root.title
 
-            Text {
-                text: root.title
+            color: Theme.secondary
 
-                color: Theme.foreground
-
-                font.family: Theme.fontFamily
-
-                font.bold: true
-            }
-
-            Text {
-                text: root.subtitle
-
-                color: Theme.secondary
-
-                font.family: Theme.fontFamily
-                font.pixelSize: 11
-            }
+            font.family: Theme.fontFamily
+            font.pixelSize: 11
         }
     }
 }

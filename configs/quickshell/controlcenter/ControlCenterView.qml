@@ -2,234 +2,78 @@ import QtQuick
 import QtQuick.Layouts
 
 import "../theme"
-import "components"
 
 Rectangle {
     id: root
 
-    implicitWidth: Theme.controlCenterWidth
-    implicitHeight: Theme.controlCenterHeight
+    implicitWidth: 700
+    implicitHeight: 600
 
-    radius: Theme.radiusLarge
+    radius: Theme.radius
 
     color: Theme.background
 
     border.width: 1
-    border.color: Theme.outline
+    border.color: Qt.rgba(1, 1, 1, 0.06)
 
     clip: true
 
     ColumnLayout {
         anchors.fill: parent
-        anchors.margins: Theme.paddingLarge
+        anchors.margins: 18
 
-        spacing: Theme.spacingLarge
+        spacing: 18
 
-        Header {}
-
-        Section {
-            title: "Quick Settings"
-
-            TileGrid {
-                Layout.fillWidth: true
-            }
+        Header {
+            Layout.fillWidth: true
         }
 
-        Section {
-            title: "Sliders"
-
-            Card {
-                Layout.fillWidth: true
-
-                ColumnLayout {
-                    anchors.fill: parent
-
-                    spacing: Theme.spacing
-
-                    Text {
-                        text: "󰕾  Volume"
-
-                        color: Theme.foreground
-
-                        font.family: Theme.fontFamily
-                        font.bold: true
-                    }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-
-                        implicitHeight: 6
-
-                        radius: 3
-
-                        color: Theme.workspaceHover
-
-                        Rectangle {
-                            anchors {
-                                left: parent.left
-                                top: parent.top
-                                bottom: parent.bottom
-                            }
-
-                            width: parent.width * 0.65
-
-                            radius: parent.radius
-
-                            color: Theme.accent
-                        }
-                    }
-
-                    Text {
-                        text: "󰃠  Brightness"
-
-                        color: Theme.foreground
-
-                        font.family: Theme.fontFamily
-                        font.bold: true
-                    }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-
-                        implicitHeight: 6
-
-                        radius: 3
-
-                        color: Theme.workspaceHover
-
-                        Rectangle {
-                            anchors {
-                                left: parent.left
-                                top: parent.top
-                                bottom: parent.bottom
-                            }
-
-                            width: parent.width * 0.45
-
-                            radius: parent.radius
-
-                            color: Theme.warning
-                        }
-                    }
-                }
-            }
+        QuickSettings {
+            Layout.fillWidth: true
         }
 
-        Section {
-            title: "Media"
+        Sliders {
+            Layout.fillWidth: true
+        }
 
-            Card {
-                Layout.fillWidth: true
-
-                implicitHeight: 90
-
-                RowLayout {
-                    anchors.fill: parent
-
-                    spacing: Theme.spacing
-
-                    Rectangle {
-                        Layout.preferredWidth: 56
-                        Layout.preferredHeight: 56
-
-                        radius: Theme.radiusSmall
-
-                        color: Theme.surfaceHover
-
-                        Text {
-                            anchors.centerIn: parent
-
-                            text: "󰎆"
-
-                            color: Theme.foreground
-
-                            font.family: Theme.fontFamily
-                            font.pixelSize: 24
-                        }
-                    }
-
-                    ColumnLayout {
-                        Layout.fillWidth: true
-
-                        spacing: 2
-
-                        Text {
-                            text: "Nothing Playing"
-
-                            color: Theme.foreground
-
-                            font.family: Theme.fontFamily
-                            font.bold: true
-                        }
-
-                        Text {
-                            text: "Start media to see controls"
-
-                            color: Theme.secondary
-
-                            font.family: Theme.fontFamily
-                            font.pixelSize: Theme.subtitleSize
-                        }
-                    }
-                }
-            }
+        Media {
+            Layout.fillWidth: true
         }
 
         Item {
             Layout.fillHeight: true
         }
 
-        Section {
-            title: "Power"
+        Rectangle {
+            Layout.fillWidth: true
 
-            RowLayout {
-                Layout.fillWidth: true
+            height: 1
 
-                spacing: Theme.spacing
+            color: Qt.rgba(1, 1, 1, 0.05)
+        }
 
-                Repeater {
-                    model: [
-                        { icon: "󰌾", title: "Lock" },
-                        { icon: "󰤄", title: "Suspend" },
-                        { icon: "󰜉", title: "Restart" },
-                        { icon: "󰐥", title: "Shutdown" }
-                    ]
-
-                    delegate: Card {
-                        Layout.fillWidth: true
-
-                        implicitHeight: 72
-
-                        Column {
-                            anchors.centerIn: parent
-
-                            spacing: 6
-
-                            Text {
-                                anchors.horizontalCenter: parent.horizontalCenter
-
-                                text: modelData.icon
-
-                                color: Theme.foreground
-
-                                font.family: Theme.fontFamily
-                                font.pixelSize: 22
-                            }
-
-                            Text {
-                                anchors.horizontalCenter: parent.horizontalCenter
-
-                                text: modelData.title
-
-                                color: Theme.secondary
-
-                                font.family: Theme.fontFamily
-                                font.pixelSize: Theme.smallFontSize
-                            }
-                        }
-                    }
-                }
-            }
+        Power {
+            Layout.fillWidth: true
         }
     }
+
+    Behavior on opacity {
+        NumberAnimation {
+            duration: 180
+        }
+    }
+
+    Behavior on scale {
+        NumberAnimation {
+            duration: 180
+        }
+    }
+
+    Component.onCompleted: {
+        opacity = 1
+        scale = 1
+    }
+
+    opacity: 0
+    scale: 0.97
 }
