@@ -8,7 +8,6 @@ RowLayout {
     id: root
 
     property var barWindow
-    property var controlCenter
 
     spacing: Theme.spacing
 
@@ -29,11 +28,5 @@ RowLayout {
 
     Tray {
         barWindow: root.barWindow
-    }
-
-    ControlButton {
-        onClicked: {
-            root.controlCenter.opened = !root.controlCenter.opened
-        }
     }
 }

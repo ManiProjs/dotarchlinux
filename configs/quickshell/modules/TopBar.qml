@@ -17,12 +17,6 @@ PanelWindow {
     implicitHeight: 42
 
     color: "transparent"
-
-    // The Control Center is a separate window, not part of the bar layout.
-    ControlCenter {
-        id: controlCenter
-    }
-
     Rectangle {
         anchors {
             fill: parent
@@ -58,7 +52,6 @@ PanelWindow {
                 }
 
                 barWindow: barWindow
-                controlCenter: controlCenter
             }
         }
     }
