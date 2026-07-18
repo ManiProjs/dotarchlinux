@@ -120,4 +120,7 @@ QtObject {
     readonly property int animationFast: 120
     readonly property int animationNormal: 180
     readonly property int animationSlow: 250
+
+    readonly property int launcherRadius: 22
+    readonly property int launcherPadding: 22
 }

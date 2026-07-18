@@ -1,0 +1,284 @@
+[
+  {
+    "name": "Ark",
+    "exec": "ark %U",
+    "icon": "ark",
+    "comment": "Work with file archives"
+  },
+  {
+    "name": "Avahi SSH Server Browser",
+    "exec": "/usr/bin/bssh",
+    "icon": "network-wired",
+    "comment": "Browse for Zeroconf-enabled SSH Servers"
+  },
+  {
+    "name": "Avahi VNC Server Browser",
+    "exec": "/usr/bin/bvnc",
+    "icon": "network-wired",
+    "comment": "Browse for Zeroconf-enabled VNC Servers"
+  },
+  {
+    "name": "Avahi Zeroconf Browser",
+    "exec": "/usr/bin/avahi-discover",
+    "icon": "network-wired",
+    "comment": "Browse for Zeroconf services available on your network"
+  },
+  {
+    "name": "Crashed Processes Viewer",
+    "exec": "drkonqi-coredump-gui",
+    "icon": "tools-report-bug",
+    "comment": "Offers detailed view of past crashes"
+  },
+  {
+    "name": "Discover",
+    "exec": "plasma-discover %F",
+    "icon": "plasmadiscover",
+    "comment": "Install and remove apps and add-ons"
+  },
+  {
+    "name": "Dolphin",
+    "exec": "dolphin %u",
+    "icon": "org.kde.dolphin",
+    "comment": "Manage your files"
+  },
+  {
+    "name": "Dragon Player",
+    "exec": "dragon %u",
+    "icon": "dragonplayer",
+    "comment": "Play video files and streams"
+  },
+  {
+    "name": "Emoji Selector",
+    "exec": "plasma-emojier",
+    "icon": "preferences-desktop-emoticons",
+    "comment": "Copy emojis to the clipboard"
+  },
+  {
+    "name": "Firefox",
+    "exec": "/usr/lib/firefox/firefox %u",
+    "icon": "firefox",
+    "comment": "Fast and private browser"
+  },
+  {
+    "name": "Gwenview",
+    "exec": "gwenview %U",
+    "icon": "gwenview",
+    "comment": "A simple image viewer"
+  },
+  {
+    "name": "Hardware Locality lstopo",
+    "exec": "lstopo",
+    "icon": "hwloc",
+    "comment": "Show hardware topology"
+  },
+  {
+    "name": "Icon Explorer",
+    "exec": "iconexplorer",
+    "icon": "org.kde.iconexplorer",
+    "comment": "Icon Previewer for Artists and Developers"
+  },
+  {
+    "name": "Info Center",
+    "exec": "kinfocenter",
+    "icon": "hwinfo",
+    "comment": "Learn about the system's hardware and status"
+  },
+  {
+    "name": "Kate",
+    "exec": "kate -b %U",
+    "icon": "kate",
+    "comment": "KDE Advanced Text Editor"
+  },
+  {
+    "name": "KDE Connect",
+    "exec": "kdeconnect-app",
+    "icon": "kdeconnect",
+    "comment": "Make all your devices one"
+  },
+  {
+    "name": "KDE Connect Indicator",
+    "exec": "kdeconnect-indicator",
+    "icon": "kdeconnect",
+    "comment": "Display information about your devices"
+  },
+  {
+    "name": "KDE Connect SMS",
+    "exec": "kdeconnect-sms",
+    "icon": "kdeconnect",
+    "comment": "Read and send SMS messages on connected devices"
+  },
+  {
+    "name": "KDE System Settings",
+    "exec": "systemsettings",
+    "icon": "preferences-system",
+    "comment": "Configure KDE Plasma\u2019s behavior and appearance"
+  },
+  {
+    "name": "kitty",
+    "exec": "kitty",
+    "icon": "kitty",
+    "comment": "Fast, feature-rich, GPU based terminal"
+  },
+  {
+    "name": "Konsole",
+    "exec": "konsole",
+    "icon": "utilities-terminal",
+    "comment": "Command line access"
+  },
+  {
+    "name": "KWrite",
+    "exec": "kwrite %U",
+    "icon": "kwrite",
+    "comment": "KDE Text Editor"
+  },
+  {
+    "name": "Manage Printing",
+    "exec": "xdg-open http://localhost:631/",
+    "icon": "cups",
+    "comment": "CUPS Web Interface"
+  },
+  {
+    "name": "Menu Editor",
+    "exec": "kmenuedit",
+    "icon": "kmenuedit",
+    "comment": "Edit how applications are presented in app launchers"
+  },
+  {
+    "name": "Okular",
+    "exec": "okular %U",
+    "icon": "okular",
+    "comment": "Universal document viewer"
+  },
+  {
+    "name": "Plasma Bigscreen",
+    "exec": "plasma-bigscreen-swap-session",
+    "icon": "applications-multimedia",
+    "comment": "Switch into a Plasma Bigscreen session"
+  },
+  {
+    "name": "Plasma Engine Explorer",
+    "exec": "plasmaengineexplorer",
+    "icon": "plasma",
+    "comment": "Explorer for the data published by Plasma DataEngines"
+  },
+  {
+    "name": "Plasma Global Theme Explorer",
+    "exec": "lookandfeelexplorer",
+    "icon": "preferences-desktop-theme",
+    "comment": ""
+  },
+  {
+    "name": "Plasma Theme Explorer",
+    "exec": "plasmathemeexplorer",
+    "icon": "preferences-desktop-theme",
+    "comment": "Explore and edit your Plasma themes"
+  },
+  {
+    "name": "Qt Assistant",
+    "exec": "assistant6",
+    "icon": "assistant",
+    "comment": "View documentation in Qt help file format"
+  },
+  {
+    "name": "Qt D-Bus Viewer",
+    "exec": "qdbusviewer6",
+    "icon": "qdbusviewer",
+    "comment": "Debug D-Bus applications"
+  },
+  {
+    "name": "Qt Linguist",
+    "exec": "linguist6 %F",
+    "icon": "linguist",
+    "comment": "Add translations to Qt applications"
+  },
+  {
+    "name": "Qt V4L2 test Utility",
+    "exec": "qv4l2",
+    "icon": "qv4l2",
+    "comment": "Allow testing Video4Linux devices"
+  },
+  {
+    "name": "Qt V4L2 video capture utility",
+    "exec": "qvidcap",
+    "icon": "qvidcap",
+    "comment": "Viewer for video capture"
+  },
+  {
+    "name": "Qt Widgets Designer",
+    "exec": "designer6 %F",
+    "icon": "designer",
+    "comment": "Design GUIs for Qt applications"
+  },
+  {
+    "name": "Rofi",
+    "exec": "rofi -show",
+    "icon": "rofi",
+    "comment": ""
+  },
+  {
+    "name": "Rofi Theme Selector",
+    "exec": "rofi-theme-selector",
+    "icon": "rofi",
+    "comment": ""
+  },
+  {
+    "name": "Spectacle",
+    "exec": "/usr/bin/spectacle",
+    "icon": "spectacle",
+    "comment": "Take screenshots and screen recordings"
+  },
+  {
+    "name": "System Monitor",
+    "exec": "plasma-systemmonitor",
+    "icon": "utilities-system-monitor",
+    "comment": "Monitor app and system resource usage"
+  },
+  {
+    "name": "System Settings",
+    "exec": "systemsettings",
+    "icon": "preferences-system",
+    "comment": "Configure the system\u2019s behavior and appearance"
+  },
+  {
+    "name": "UVC Viewer",
+    "exec": "plasma-bigscreen-uvcviewer",
+    "icon": "video-display",
+    "comment": ""
+  },
+  {
+    "name": "Vim",
+    "exec": "vim %F",
+    "icon": "gvim",
+    "comment": "Edit text files"
+  },
+  {
+    "name": "VLC media player",
+    "exec": "/usr/bin/vlc --started-from-file %U",
+    "icon": "vlc",
+    "comment": "Read, capture, broadcast your multimedia streams"
+  },
+  {
+    "name": "Wacom Tablet finder",
+    "exec": "kde_wacom_tabletfinder",
+    "icon": "preferences-desktop-tablet",
+    "comment": ""
+  },
+  {
+    "name": "Welcome Center",
+    "exec": "plasma-welcome",
+    "icon": "start-here-kde-plasma",
+    "comment": "Learn more about KDE Plasma"
+  },
+  {
+    "name": "xgps",
+    "exec": "xgps",
+    "icon": "/usr/share/gpsd/icons/gpsd-logo.png",
+    "comment": "Display GPS information from a gpsd daemon"
+  },
+  {
+    "name": "xgpsspeed",
+    "exec": "xgpsspeed",
+    "icon": "/usr/share/gpsd/icons/gpsd-logo.png",
+    "comment": "Display GPS speed from a gpsd daemon"
+  }
+]
